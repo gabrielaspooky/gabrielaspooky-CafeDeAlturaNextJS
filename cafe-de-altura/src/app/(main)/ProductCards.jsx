@@ -1,21 +1,21 @@
 "use client";
+import React, { useContext } from "react";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
-import React, { useContext } from "react";
 // import { FormContext } from "@/context/FormContext";
 // import CardProduct from "@/components/CardProduct";
 
 const ProductCards = () => {
-    const {dataCoffee} = useContext(FormContext)
+    // const {dataCoffee} = useContext(FormContext)
   return (
-    <div className="min-h-[603.39px] flex flex-col justify-center items-center gap-10">
+    <div className="min-h-[603.39px] flex flex-col justify-center items-center gap-10 bg-white">
       <h2 className="text-2xl font-medium text-[#2A5B45] leading-7 w-[120px]">
         Novedades
       </h2>
       <div className="flex max-w-[1200px] min-h-[391.39px] gap-6 justify-between items-center">
-        {dataCoffee.slice(0, 4).map((card, i) => {
+        {/* {dataCoffee.slice(0, 4).map((card, i) => {
           return <CardProduct key={i} data={card} />;
-        })}
+        })} */}
       </div>
       <div>
         <Link
