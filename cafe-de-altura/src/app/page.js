@@ -5,6 +5,7 @@ import ProductCards from "./(main)/ProductCards";
 import FAQWrapper from "./(main)/FAQsWrapper";
 import ContactForm from "./(main)/ContactForm";
 import { Footer } from "../../components/ui/Footer";
+import BenefitsSection from "./(main)/BenefitsSection";
 
 // import CardsConditions from "@/components/CardsConditions";
 // import CardsNews from "./CardsNews";
@@ -13,6 +14,7 @@ const Home = () => {
   return (
     <div>
     <Hero />
+    <BenefitsSection />
     <ProductCards />
     <FAQWrapper />
    <FeatureSection />

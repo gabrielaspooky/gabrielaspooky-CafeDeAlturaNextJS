@@ -1,40 +1,57 @@
 import { Coffee, Phone, ShoppingBag } from "lucide-react";
 import React from "react";
-import Buttons from "./Buttons";
 import Link from "next/link";
 
 const NavBar = () => {
   return (
-    <nav className="bg-[#2B2A2B] min-h-16 flex justify-around items-center text-[#FFFFFF] w-full">
-      <Link href={'/'}>
-        <div className="flex gap-[7.33px] items-center">
-          <p className="text-[23.46px] font-normal leading-[35.19px]">
-            cafedealtura.com
-          </p>
+    <nav className="bg-[#2B2A2B] h-16 flex justify-between items-center px-8 text-[#FFFFFF] w-full">
+      {/* Logo Section */}
+        <div className="flex items-center gap-2">
+          <p className="text-lg font-semibold">cafedealtura.com</p>
           <Coffee className="w-6 h-6" />
         </div>
-      </Link>
+ 
 
-      <ul className="flex min-w-[512px] min-h-[32px] gap-4 text-sm leading-4 items-center justify-between font-semibold list-none">
-        <Link href={"/shop"}>
-          <li className="p-2 rounded-lg hover:bg-[#F7F5F31A]">Tienda</li>
-        </Link>
-        <Link href={'/subscription'}><li className="p-2 rounded-lg hover:bg-[#F7F5F31A]">Suscripción</li></Link>
-        <Link href={'/forCompanies'}><li className="p-2 rounded-lg hover:bg-[#F7F5F31A]">Para empresas</li></Link>
-        <Link href={'/aboutUs'}><li className="p-2 rounded-lg hover:bg-[#F7F5F31A]">Sobre nosotros</li></Link>
-        <Link href={'/contact'}><li className="p-2 rounded-lg hover:bg-[#F7F5F31A]">Contacto</li></Link>
+      {/* Navigation Links */}
+      <ul className="flex gap-8 text-sm font-semibold">
+        <li>
+          <Link href="/shop" className="hover:bg-[#F7F5F31A] py-2 px-3 rounded-lg">Tienda
+          </Link>
+        </li>
+        <li>
+          <Link href="/subscription" className="hover:bg-[#F7F5F31A] py-2 px-3 rounded-lg">Suscripción
+          </Link>
+        </li>
+        <li>
+          <Link href="/forCompanies" className="hover:bg-[#F7F5F31A] py-2 px-3 rounded-lg">Para empresas
+          </Link>
+        </li>
+        <li>
+          <Link href="/aboutUs" className="hover:bg-[#F7F5F31A] py-2 px-3 rounded-lg">Sobre nosotros
+          </Link>
+        </li>
+        <li>
+          <Link href="/contact" className="hover:bg-[#F7F5F31A] py-2 px-3 rounded-lg">
+          Contacto
+          </Link>
+        </li>
       </ul>
 
-      <div className="flex min-h-[40px] min-w-[288px] gap-6 text-sm items-center font-semibold">
-        <div className="flex gap-2 items-center">
-          <Phone className="w-6 h-6" />
-          <p className="leading-4">+34 919 49 05 18</p>
+      {/* Right Section */}
+      <div className="flex items-center gap-6">
+        {/* Phone Section */}
+        <div className="flex items-center gap-2">
+          <Phone className="w-5 h-5" />
+          <p className="text-sm">+34 919 49 05 18</p>
         </div>
-        <Buttons text={"Iniciar sesión"} type={"gray"} />
-      </div>
 
-      <div>
-        <ShoppingBag className="cursor-pointer" />
+        {/* Login Button */}
+        <Link href="/login" className="bg-[#3C3C3C] hover:bg-[#505050] text-white text-sm py-2 px-4 rounded-lg">
+            Iniciar sesión
+        </Link>
+
+        {/* Shopping Bag Icon */}
+        <ShoppingBag className="w-6 h-6 cursor-pointer" />
       </div>
     </nav>
   );
