@@ -51,7 +51,9 @@ const NavBar = () => {
         </Link>
 
         {/* Shopping Bag Icon */}
+        <Link href="/shoppingBag">
         <ShoppingBag className="w-6 h-6 cursor-pointer" />
+        </Link>
       </div>
     </nav>
   );
