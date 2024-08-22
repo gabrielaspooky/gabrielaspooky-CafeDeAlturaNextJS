@@ -1,6 +1,7 @@
 import React from 'react';
 import { CreditCard, Banknote, Phone } from 'lucide-react';
 import CopyrightFooter from '../../../components/ui/CopyrightFooter';
+import Image from 'next/image';
 
 const CheckoutPage = () => {
   return (
@@ -42,8 +43,14 @@ const CheckoutPage = () => {
               <div className="py-4">
                 <label className="flex items-center mb-2">
                   <input type="radio" name="payment" className="form-radio text-green-600" />
-                  <Phone className="h-6 w-6 text-gray-600 ml-2" />
                   <span className="ml-2 text-sm font-semibold">Bizum</span>
+                  <Image
+          src={`/bizumlogo.png`}
+          alt="Logo de Bizum"
+          height={30}
+          width={69}
+          className="rounded-[20px]"
+        />
                 </label>
               </div>
             </div>
