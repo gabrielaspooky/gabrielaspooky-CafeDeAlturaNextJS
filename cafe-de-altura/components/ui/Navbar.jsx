@@ -7,7 +7,7 @@ import ShoppingBagDrawer from "./BagDrawer";
 
 const NavBar = () => {
   return (
-    <nav className="bg-[#2B2A2B] h-16 flex justify-between items-center px-8 text-[#FFFFFF] w-full">
+    <nav className="bg-[#2B2A2B] relative z-50 h-16 flex justify-between items-center px-8 text-[#FFFFFF] w-full">
       {/* Logo Section */}
         <div className="flex items-center gap-2">
           <p className="text-lg font-semibold">cafedealtura.com</p>
