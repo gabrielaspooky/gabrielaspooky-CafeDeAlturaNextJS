@@ -1,5 +1,6 @@
 import React from 'react';
 import { Phone, Mail } from 'lucide-react';
+import Link from 'next/link';
 
 const Footer = () => {
   return (
@@ -13,11 +14,11 @@ const Footer = () => {
               <p>Te ayudamos en</p>
               <div className="flex items-center mt-2">
                 <Phone className="h-6 w-6 text-white mr-2" />
-                <a href="tel:+34919490518" className="text-white">+34 919 49 05 18</a>
+                <Link href="tel:+34919490518" className="text-white">+34 919 49 05 18</Link>
               </div>
               <div className="flex items-center mt-2">
                 <Mail className="h-6 w-6 text-white mr-2" />
-                <a href="mailto:hola@cafedealtura.com" className="text-white">hola@cafedealtura.com</a>
+                <Link href="mailto:hola@cafedealtura.com" className="text-white">hola@cafedealtura.com</Link>
               </div>
             </div>
           </div>
