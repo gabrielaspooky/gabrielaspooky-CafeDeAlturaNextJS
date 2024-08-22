@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { MinusCircle, PlusCircle } from 'lucide-react';
 import Footer from '../../../components/ui/Footer';
 import CopyrightFooter from '../../../components/ui/CopyrightFooter';
+import Link from 'next/link';
 
 const shoppingBag = () => {
   return (
@@ -98,9 +99,9 @@ const shoppingBag = () => {
                 <span className="text-lg font-semibold">18,00 €</span>
               </div>
               <p className="text-sm text-gray-500 mb-6">Incluye 3,78€ de IVA</p>
-              <button className="w-full bg-green-900 text-white font-semibold py-2 rounded-lg hover:bg-green-800">
-                Ir a checkout
-              </button>
+              <Link href="/checkout" className="bg-[#2A5B45] hover:bg-[#505050] text-white text-sm py-2 px-4 rounded-lg">
+          Ir al Checkout
+        </Link>
               <a href="#" className="block text-center text-green-900 mt-4 underline">Seguir comprando</a>
             </div>
           </div>

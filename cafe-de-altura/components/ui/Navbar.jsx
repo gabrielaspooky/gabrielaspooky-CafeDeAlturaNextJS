@@ -1,6 +1,9 @@
+'use client'
+
 import { Coffee, Phone, ShoppingBag } from "lucide-react";
 import React from "react";
 import Link from "next/link";
+import ShoppingBagDrawer from "./BagDrawer";
 
 const NavBar = () => {
   return (
@@ -51,9 +54,7 @@ const NavBar = () => {
         </Link>
 
         {/* Shopping Bag Icon */}
-        <Link href="/shoppingBag">
-        <ShoppingBag className="w-6 h-6 cursor-pointer" />
-        </Link>
+      <ShoppingBagDrawer />
       </div>
     </nav>
   );
