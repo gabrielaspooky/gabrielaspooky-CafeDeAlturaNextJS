@@ -3,7 +3,7 @@ import React from 'react';
 const BenefitsSection = () => {
   const benefits = [
     {
-      icon: <img src="/path-to-your-icon1.png" alt="Icono 1" className="w-12 h-12 mb-2" />,
+      icon: <img src="/" alt="Icono 1" className="w-12 h-12 mb-2" />,
       title: 'Recibe tu pedido sin preocuparte',
       description: 'Tienes cosas más importantes en la cabeza, por eso con nuestra suscripción de café, nunca te quedarás sin tu taza de la mañana.',
     },
